@@ -26,10 +26,10 @@ export default {
         const notifications = useNotifications();
 
         function addNotification() {
-            notifications.notify('Hello World')
+            notifications.notify('Hello World');
         }
 
-        return { addNotification }
+        return { addNotification };
     }
 }
 ```
@@ -59,7 +59,7 @@ Example with [Animate](https://animate.style/) and [Tailwind](https://tailwindcs
 </style>
 
 <notifications :new-on-top="true" v-slot="{ notifications }">
-    <div class="fixed inset-0 flex pointer-events-none justify-start">
+    <div class="fixed inset-0 flex pointer-events-none justify-end">
         <div class="max-w-sm w-full">
             <transition-group name="notification">
                 <div v-for="notification in notifications" :key="notification.id" class="notification-item bg-green-500 text-white rounded py-2 px-4 m-6 text-sm">
