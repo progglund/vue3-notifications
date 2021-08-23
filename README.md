@@ -10,6 +10,7 @@ npm i @progglund/vue3-notifications
 
 ```javascript
 import Notifications from '@progglund/vue3-notifications';
+app.use(Notifications);
 
 this.$notify('Hello World');
 ```
